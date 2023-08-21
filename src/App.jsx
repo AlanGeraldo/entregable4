@@ -2,7 +2,7 @@ import axios from "axios";
 import "./App.css";
 import { useEffect, useState } from "react";
 import Users from "./components/Users";
-import ShowModal from "./components/showModal";
+import ShowModal from "./components/ShowModal";
 import ModalDelete from "./components/ModalDelete";
 
 const BASE_URL = "https://users-crud.academlo.tech/";
