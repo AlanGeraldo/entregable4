@@ -7,20 +7,20 @@ const ShowModal = ({
   userUpdate,
   userAccound,
   setIsShowModal,
-  setUserUpdate
+  setUserUpdate,
 }) => {
   const { handleSubmit, register, reset } = useForm();
 
   const submit = (data) => {
     if (userUpdate) {
-      userAccound(data, reset)
-    }else {
+      userAccound(data, reset);
+    } else {
       createUser(data, reset);
     }
   };
 
   const handleClickCloseModal = () => {
-    setIsShowModal(false)
+    setIsShowModal(false);
     reset({
       first_name: "",
       last_name: "",
@@ -28,8 +28,8 @@ const ShowModal = ({
       password: "",
       birthday: "",
     });
-    setUserUpdate(null)
-  }
+    setUserUpdate(null);
+  };
 
   useEffect(() => {
     if (userUpdate) {

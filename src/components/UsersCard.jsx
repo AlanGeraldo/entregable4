@@ -1,4 +1,4 @@
-const UsersCard = ({ user, handleClickUpdate, getModalDelete  }) => {
+const UsersCard = ({ user, handleClickUpdate, getModalDelete }) => {
   return (
     <section className="bg-white/90 border-[1px] border-gray-700/50 rounded-md mx-6 p-4">
       <ul>
